@@ -1,8 +1,9 @@
 {
+  "id": "/?source=pwa",
   "name": "Kalkulator",
   "short_name": "Kalkulator",
   "description": "Kalkulator modern — offline-ready, cepat, dan ringan.",
-  "start_url": "/index.html",
+  "start_url": "/index.html?source=pwa",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
