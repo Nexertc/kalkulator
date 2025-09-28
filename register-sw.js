@@ -138,3 +138,15 @@ if ('serviceWorker' in navigator) {
     installBtn.style.display = 'none';
     deferredPrompt = null;
   });
+
+  function isInStandaloneMode() {
+  return (window.matchMedia('(display-mode: standalone)').matches) ||
+         (window.navigator.standalone === true);
+}
+
+window.addEventListener('load', () => {
+  const installBtn = document.getElementById('installBtn');
+  if (isInStandaloneMode()) {
+    installBtn.style.display = 'none';
+  }
+});
